@@ -1,2 +1,5 @@
-phases.setup]
-nixPkgs = ["ffmpeg", "libsodium"]
+[phases.setup]
+nixPkgs = ["ffmpeg", "libsodium", "pkg-config"]
+
+[phases.install]
+cmds = ["pip install -U PyNaCl discord.py yt-dlp spotipy"]
